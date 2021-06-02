@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="800dp"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:layout_gravity="center"
+    android:background="@drawable/fundo_netflix">
+
+    <androidx.cardview.widget.CardView
+        android:alpha="0.8"
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/black"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/logonetflix"
+            android:layout_marginTop="32dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="netflix@netflix.com.br"
+            android:textColorHint="@color/black"
+            android:background="@drawable/box_branco"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="180dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="10dp"
+            android:drawableRight="@drawable/ic_person"
+            android:paddingRight="16dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Senha"
+            android:textColorHint="@color/black"
+            android:background="@drawable/box_branco"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="230dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="16dp"
+            android:paddingBottom="10dp"
+            />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar senha (login)"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="270dp"
+            android:backgroundTint="@color/vermelho_vivo"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:onClick="entrar"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_marginTop="330dp"/>
+
+        <Button
+            android:id="@+id/btn_cad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="32dp"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:layout_marginTop="380dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Os melhores filmes da palma de sua mão"
+            android:textAlignment="center"
+            android:layout_marginTop="520dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/letra_netflix"
+            android:layout_marginTop="550dp"/>
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
